@@ -58,7 +58,7 @@ export default function Pricing() {
 
   const addOns = [
     {
-      name: "Live Updates",
+      name: "Push Notification",
       price: "$3/year",
       description: "Receive instant notifications for new or updated emails across all devices — no need to press 'Send/Receive' manually.",
       icon: (
@@ -100,15 +100,12 @@ export default function Pricing() {
           <AnimateOnScroll animation="fadeInUp" delay={0}>
             <div className="text-center mb-0">
               <p className="text-xs sm:text-sm lg:text-base font-medium text-[#2C8DA1] mb-2 sm:mb-3 uppercase tracking-wide">
-                PRICING
+                ADD-ONS
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#023347] mb-2 sm:mb-3 leading-tight">
-                Simple, Transparent Pricing
+                              Enhance your experience with add-ons. 
               </h1>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Choose the plan that's right for you. All plans include core security features. 
-                Upgrade anytime to unlock additional capabilities.
-              </p>
+            
             </div>
           </AnimateOnScroll>
         </div>

@@ -55,8 +55,8 @@ export default function Header() {
           <Link href="/security" className="text-gray-700 hover:text-gray-900 font-medium text-sm lg:text-base transition-smooth">
             Security
           </Link>
-          <Link href="/pricing" className="text-gray-700 hover:text-gray-900 font-medium text-sm lg:text-base transition-smooth">
-            Pricing
+          <Link href="/add-ons" className="text-gray-700 hover:text-gray-900 font-medium text-sm lg:text-base transition-smooth">
+            Add-Ons
           </Link>
         </nav>
 
@@ -123,12 +123,12 @@ export default function Header() {
               Security
             </Link>
             <Link
-              href="/pricing"
+              href="/add-ons"
               className="block py-2.5 sm:py-3 px-2 sm:px-3 text-gray-700 hover:text-gray-900 font-medium text-sm sm:text-base transition-all duration-300 transform transition-smooth hover:translate-x-3 hover:text-[#2C8DA1] hover:bg-[#2C8DA1]/5 rounded-lg opacity-0 animate-slide-in-left-scale"
               onClick={() => setIsMenuOpen(false)}
               style={{ animationDelay: '0.25s' }}
             >
-              Pricing
+              Add-Ons
             </Link>
             <div className="pt-3 sm:pt-4 border-t border-gray-200 space-y-2 sm:space-y-3">
               <Link 
