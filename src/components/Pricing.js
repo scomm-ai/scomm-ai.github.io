@@ -103,9 +103,12 @@ export default function Pricing() {
                 ADD-ONS
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#023347] mb-2 sm:mb-3 leading-tight">
-                              Enhance your experience with add-ons. 
+                Enhance your experience with add-ons.
               </h1>
-            
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Enhance your scomm.ai experience with optional add-ons. 
+                All add-ons are available for Pro plan users.
+              </p>
             </div>
           </AnimateOnScroll>
         </div>
