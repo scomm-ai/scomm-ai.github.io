@@ -32,20 +32,27 @@ jobs:
         run: npm ci
       
       - name: Build
-        run: npm run build
+        run: |
+          echo "Starting build..."
+          npm run build
+          echo "Build completed successfully"
         env:
           NODE_ENV: production
           NEXT_TELEMETRY_DISABLED: 1
-        continue-on-error: false
       
       - name: Verify out directory
         run: |
           if [ ! -d "out" ]; then
-            echo "Error: out directory not found after build"
+            echo "❌ Error: out directory not found after build"
+            echo "Listing current directory:"
+            ls -la
             exit 1
           fi
           echo "✓ out directory exists"
+          echo "Contents of out directory:"
           ls -la out | head -20
+          echo "Checking for index.html:"
+          test -f out/index.html && echo "✓ index.html exists" || echo "❌ index.html missing"
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
